@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +18,9 @@
             android:layout_marginStart="20dp"
             android:hint="Họ và tên"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
         <EditText
             android:id="@+id/mssv"
             android:layout_marginTop="40dp"
@@ -26,7 +28,9 @@
             android:layout_marginStart="20dp"
             android:hint="Mã số sinh viên"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
 
         <Button
             android:layout_gravity="center"
@@ -37,7 +41,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/dssinhvien"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
     </LinearLayout>
 
 
